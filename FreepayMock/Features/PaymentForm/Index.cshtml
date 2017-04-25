@@ -1,0 +1,64 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
+@{
+    Layout = "Layout";
+}
+
+<h1>Payment form</h1>
+<form action="/secure/authorize.aspx" method="post">
+    
+    <table>
+        <tr>
+            <td>MerchantNumber:</td>
+            <td><input type="text" name="MerchantNumber" value="54321" /></td>
+        </tr>
+        <tr>
+            <td>AcceptURL:</td>
+            <td><input type="text" id="AcceptURL" value="/payment-accepted" /></td>
+        </tr>
+        <tr>
+            <td>DeclineURL</td>
+            <td><input type="text" name="DeclineURL" value="/payment-declined" /></td>
+        </tr>
+        <tr>
+            <td>Subscription</td>
+            <td>
+                <input type="radio" name="subscription" value="0"/> No
+                <input type="radio" name="subscription" value="1"/> Yes
+            </td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="text" name="Amount" value="9995"/></td>
+        </tr>
+        <tr>
+            <td>Currency</td>
+            <td><input type="text" name="Currency" value="208"/></td>
+        </tr>
+        <tr>
+            <td>OrderNumber</td>
+            <td><input type="text" name="OrderNumber" value="975310"/></td>
+        </tr>
+        <tr>
+            <td>CardNumber</td>
+            <td><input type="text" name="CardNumber" value="4571123412341234"/></td>
+        </tr>
+        <tr>
+            <td>ExpireMonth</td>
+            <td><input type="text" name="ExpireMonth" value="08"/></td>
+        </tr>
+        <tr>
+            <td>ExpireYear</td>
+            <td><input type="text" name="ExpireYear" value="22"/></td>
+        </tr>
+        <tr>
+            <td>CVC</td>
+            <td><input type="text" name="CVC" value="123"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Pay</button></td>
+        </tr>
+    </table>
+
+
+</form>
