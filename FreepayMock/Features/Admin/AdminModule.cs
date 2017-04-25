@@ -13,6 +13,18 @@ namespace FreepayMock.Features.Admin
         {
             Get["/"] = _ =>
             {
+                var recentSubscriptions = 
+                    db.Subscriptions
+                        .Take(10)
+                        .OrderByDescending(x => x.SubscriptionId)
+                        .ToList();
+
+                var recentTransactions =
+                    db.Transactions
+                        .Take(10)
+                        .OrderByDescending(x => x.SubscriptionId)
+                        .ToList();
+
 
                 return "OK";
             };

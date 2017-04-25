@@ -78,12 +78,11 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Features\Admin\AdminModule.cs" />
     <Compile Include="Features\AuthorizeModule.cs" />
     <Compile Include="Features\Home\HomeModule.cs" />
-    <Compile Include="Features\Log\LogModule.cs" />
-    <Compile Include="Features\Mock\WebServicesModule.cs" />
+    <Compile Include="Features\WebServices\WebServicesModule.cs" />
     <Compile Include="Features\PaymentForm\PaymentFormModule.cs" />
-    <Compile Include="Features\Transactions\TransactionModule.cs" />
     <Compile Include="Data\FreepayMockContext.cs" />
     <Compile Include="Data\MerchantRecord.cs" />
     <Compile Include="Program.cs" />
@@ -109,6 +108,9 @@
       <Project>{AF170BFE-8F31-4AF1-9931-F961601B33A0}</Project>
       <Name>Freepay</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Authorize\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Nancy.Viewengines.Razor.1.4.3\build\Nancy.ViewEngines.Razor.targets" Condition="Exists('..\packages\Nancy.Viewengines.Razor.1.4.3\build\Nancy.ViewEngines.Razor.targets')" />

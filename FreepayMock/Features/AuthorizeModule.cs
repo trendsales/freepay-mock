@@ -108,6 +108,8 @@ namespace FreepayMock.Data
                     card.TransactionId = transaction.TransactionId;
                     db.Cards.Add(card);
                     db.SaveChanges();
+
+
                 }
 
 
