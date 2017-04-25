@@ -9,7 +9,6 @@ namespace FreepayMock.Data
     {
         [Key]
         public int TransactionId { get; set; }
-
         public int? SubscriptionId { get; set; }
         public int Amount { get; set; }
         public string OrderId { get; set; }

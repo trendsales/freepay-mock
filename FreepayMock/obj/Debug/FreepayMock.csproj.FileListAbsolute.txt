@@ -57,3 +57,5 @@ C:\freepay-mock\FreepayMock\bin\Debug\System.Web.Razor.xml
 C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.csprojResolveAssemblyReference.cache
 C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.exe
 C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.pdb
+C:\freepay-mock\FreepayMock\bin\Debug\Newtonsoft.Json.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Newtonsoft.Json.xml

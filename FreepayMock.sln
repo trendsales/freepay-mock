@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreepayMock", "FreepayMock\FreepayMock.csproj", "{8680B4CD-8144-4D88-9D98-DC7CEFE8E921}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freepay", "freepay\Freepay\Freepay.csproj", "{AF170BFE-8F31-4AF1-9931-F961601B33A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreepayMock.Tests", "FreepayMock.Tests\FreepayMock.Tests.csproj", "{BC9141AE-1265-4950-9336-5AADBA0F0E67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreepayMock.WebHost", "FreepayMock.WebHost\FreepayMock.WebHost.csproj", "{55F6AD28-5A72-4F77-B84D-0B1BFA0AACAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BC9141AE-1265-4950-9336-5AADBA0F0E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC9141AE-1265-4950-9336-5AADBA0F0E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC9141AE-1265-4950-9336-5AADBA0F0E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F6AD28-5A72-4F77-B84D-0B1BFA0AACAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F6AD28-5A72-4F77-B84D-0B1BFA0AACAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F6AD28-5A72-4F77-B84D-0B1BFA0AACAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F6AD28-5A72-4F77-B84D-0B1BFA0AACAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
