@@ -1,0 +1,74 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<FreepayMock.Features.VerifiedByVisa.Index.Model>
+
+<style>
+    body {
+        font-family: "Arial";
+        font-size: 12px;
+    }
+
+    .boxed {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td {
+        font-family: "Arial";
+        font-size: 12px;
+    }
+
+    .note {
+        font-size: 10px;
+    }
+</style>
+
+<div class="boxed">
+    <p>
+        <strong>Bekr&aelig;ftelse med engangskode</strong><br />
+        <br />
+        En engangskode er blevet sendt til din mobiltelefon.<br />
+        Du b&oslash;r modtage den indenfor to minutter. Indtast koden nedenfor og <br />
+        tryk 'Bekr&aelig;ft'<br />
+        Hvis du ikke modtager engangskoden kan du klikke 'Ny kode' for at<br />
+        f&aring; en ny. Hvis du ikke modtager koden klik p&aring; 'NemID'.<br />
+    </p>
+    <table>
+        <tr>
+            <td>Netbutik:</td>
+            <td>Trendsales ApS</td>
+        </tr>
+        <tr>
+            <td>Bel&oslash;b:</td>
+            <td>@Model.CurrencyString @Model.AmountString</td>
+        </tr>
+        <tr>
+            <td>Dato:</td>
+            <td>@Model.Timestamp</td>
+        </tr>
+        <tr>
+            <td>Kortnummer:</td>
+            <td>477199...9459</td>
+        </tr>
+        <tr>
+            <td>Mobiltelefonnummer</td>
+            <td>45207XXX68</td>
+        </tr>
+        <tr>
+            <td>Engangskode via SMS:</td>
+            <td><form method="post">
+                <input type="hidden" name="hiddencode" value="@Model.Code"/>
+                <input type="text" value="@Model.Code" name="code"/>
+                <button type="submit">Bekr&aelig;ft</button>
+            </form></td>
+        </tr>
+    </table>
+
+    <p>
+        Du skal bruge NemID for at &aelig;ndre mobiltelefonnummer.<br />
+        Ved sp&oslash;rgsm&aring;l, kontakt venligst Nets Kundeservice p&aring; +45 44 89 27 50
+    </p>
+
+    <button type="button">&AElig;ndre nummer</button>
+    <button type="button">Ny kode</button>
+    <button type="button">NemID</button>
+    <button type="button">Tilbage</button>
+</div>

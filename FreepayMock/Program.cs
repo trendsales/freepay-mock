@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FreepayMock.Data;
 using Microsoft.Owin.Hosting;
 using Nancy.Bootstrapper;
 
@@ -13,7 +14,7 @@ namespace FreepayMock
         {
             if (args.Any() && args[0] == "reinstall")
             {
-                FreepayMockContext context = new FreepayMockContext();
+                var context = new FreepayMockContext();
                 if (context.Database.Exists())
                 {
                     context.Database.Delete();

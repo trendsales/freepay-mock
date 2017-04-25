@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Freepay;
 using FreepayMock.Data;
 using Nancy;
 
-namespace FreepayMock.Features.Mock
+namespace FreepayMock.Features.WebServices
 {
     public class WebServicesModule : NancyModule
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FreepayMock
+namespace FreepayMock.Data
 {
     [Table("SubscriptionLogs")]
     public class SubscriptionLogRecord

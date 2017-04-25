@@ -28,3 +28,32 @@ C:\Users\kasper\documents\visual studio 2017\Projects\FreepayMock\FreepayMock\bi
 C:\Users\kasper\documents\visual studio 2017\Projects\FreepayMock\FreepayMock\bin\Debug\Freepay.dll.config
 C:\Users\kasper\documents\visual studio 2017\Projects\FreepayMock\FreepayMock\bin\Debug\EntityFramework.xml
 C:\Users\kasper\documents\visual studio 2017\Projects\FreepayMock\FreepayMock\bin\Debug\EntityFramework.SqlServer.xml
+C:\freepay-mock\FreepayMock\bin\Debug\FreepayMock.exe.config
+C:\freepay-mock\FreepayMock\bin\Debug\FreepayMock.exe
+C:\freepay-mock\FreepayMock\bin\Debug\FreepayMock.pdb
+C:\freepay-mock\FreepayMock\bin\Debug\EntityFramework.dll
+C:\freepay-mock\FreepayMock\bin\Debug\EntityFramework.SqlServer.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Freepay.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.Owin.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.ViewEngines.Razor.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Owin.dll
+C:\freepay-mock\FreepayMock\bin\Debug\System.Web.Razor.dll
+C:\freepay-mock\FreepayMock\bin\Debug\System.Net.Http.Formatting.dll
+C:\freepay-mock\FreepayMock\bin\Debug\Freepay.pdb
+C:\freepay-mock\FreepayMock\bin\Debug\Freepay.dll.config
+C:\freepay-mock\FreepayMock\bin\Debug\EntityFramework.xml
+C:\freepay-mock\FreepayMock\bin\Debug\EntityFramework.SqlServer.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.Owin.xml
+C:\freepay-mock\FreepayMock\bin\Debug\Nancy.ViewEngines.Razor.xml
+C:\freepay-mock\FreepayMock\bin\Debug\System.Web.Razor.xml
+C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.csprojResolveAssemblyReference.cache
+C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.exe
+C:\freepay-mock\FreepayMock\obj\Debug\FreepayMock.pdb

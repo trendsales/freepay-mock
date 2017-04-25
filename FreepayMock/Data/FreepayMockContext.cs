@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FreepayMock.Data;
+﻿using System.Data.Entity;
 
-namespace FreepayMock
+namespace FreepayMock.Data
 {
     public class FreepayMockContext : DbContext
     {

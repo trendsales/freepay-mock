@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FreepayMock.Data;
 using Nancy;
 
-namespace FreepayMock.Data
+namespace FreepayMock.Features.Authorize
 {
     public class AuthorizeModule : NancyModule
     {
@@ -34,7 +31,7 @@ namespace FreepayMock.Data
                     return HttpStatusCode.InternalServerError;
                 }
 
-                CardRecord card = new CardRecord();
+                var card = new CardRecord();
                 card.CardNumber = cardNumber;
                 card.ExpireMonth = expireMonth;
                 card.ExpireYear = expireYear;
@@ -60,7 +57,7 @@ namespace FreepayMock.Data
 
                     card.SubscriptionId = record.SubscriptionId;
 
-                    TransactionRecord transaction = new TransactionRecord();
+                    var transaction = new TransactionRecord();
                     transaction.Amount = amount;
                     transaction.CurrencyAsInt = currency;
                     transaction.DateEarliestCapture = DateTime.Now;
@@ -86,12 +83,11 @@ namespace FreepayMock.Data
                 }
                 else
                 {
-
-                    TransactionRecord transaction = new TransactionRecord();
+                    var transaction = new TransactionRecord();
                     transaction.Amount = amount;
                     transaction.CurrencyAsInt = currency;
                     transaction.DateEarliestCapture = DateTime.Now;
-                    transaction.DateCreated = DateTime.Now;;
+                    transaction.DateCreated = DateTime.Now; ;
                     transaction.OrderId = orderNumber;
                     transaction.AuthorizationAmount = amount;
                     transaction.CaptureAmount = amount;
@@ -108,30 +104,21 @@ namespace FreepayMock.Data
                     card.TransactionId = transaction.TransactionId;
                     db.Cards.Add(card);
                     db.SaveChanges();
-
-
                 }
 
-
-
-
-                return "OK";
+                if (subscription == 1 || (currency == 208 && amount >= 45000))
+                {
+                    var verifyUrl = $"/verified-by-visa?amount={amount}&currency={currency}&acceptUrl={acceptUrl}&declineUrl={declineUrl}";
+                    return Response.AsRedirect(verifyUrl);
+                }
+                else
+                {
+                    return Response.AsRedirect(acceptUrl);
+                }
             };
         }
 
 
 
-    }
-
-    public class CardRecord
-    {
-        [Key]
-        public int CardId { get; set; }
-        public int SubscriptionId { get; set; }
-        public int TransactionId { get; set; }
-        public string CardNumber { get; set; }
-        public string ExpireMonth { get; set; }
-        public string ExpireYear { get; set; }
-        public string CVC { get; set; }
     }
 }
