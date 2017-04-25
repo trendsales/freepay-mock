@@ -64,6 +64,7 @@ namespace FreepayMock.Features.Authorize
                     transaction.OrderId = orderNumber;
                     transaction.AuthorizationAmount = amount;
                     transaction.CaptureAmount = amount;
+                    transaction.DateCreated = DateTime.Now;
                     transaction.DateAuthorized = DateTime.Now;
                     transaction.IsAwaitingApproval = true;
                     transaction.MerchantId = merchantNumber;
